@@ -53,6 +53,11 @@ ynh_config_add_systemd
 
 yunohost service add "$app" --description="A short description of the app" --log="/var/log/$app/$app.log"
 
+
+cozy-stack instances add \
+    --apps home,banks,contacts,drive,notes,passwords,photos,settings,store \
+    --email __EMAIL__ --locale fr --tz "Europe/Paris" __DOMAIN__
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
