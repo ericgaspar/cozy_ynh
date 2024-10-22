@@ -12,12 +12,12 @@ version = "1.6.30~ynh1"
 maintainers = ["eric_G"]
 
 [upstream]
-license = "free" # you can see the available licenses identifiers list here: https://spdx.org/licenses/
+license = "free"
 website = "https://example.com"
 demo = "https://demo.example.com"
 admindoc = "https://docs.cozy.io/en/tutorials/selfhosting/"
 userdoc = "https://yunohost.org/apps"
-code = "https://some.forge.com/example/example"
+code = "https://github.com/cozy/cozy-stack"
 
 [integration]
 yunohost = ">= 11.2.30"
@@ -48,12 +48,9 @@ ram.runtime = "50M"
     default = "fr"
 
     [install.admin]
-    # this is a generic question - ask strings are automatically handled by YunoHost's core
     type = "user"
 
     [install.password]
-    # this is a generic question - ask strings are automatically handled by YunoHost's core
-    # Note that user-provided passwords questions are not automatically saved as setting
     help.en = "Use the help field to add an information for the admin about this question."
     help.fr = "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
     type = "password"
